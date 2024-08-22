@@ -1,0 +1,45 @@
+.main-container7{
+    width: 80%;
+    height: max-content;
+    font-family: 'sans Work',sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    box-shadow: 0px 20px 40px rgba(28, 28, 30, 0.05);
+    padding: 20px 0 0 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.main-container7 h3{
+    color: rgba(94, 97, 117, 1);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 14px 0 10px 0;
+    width: 90%;
+}
+.main-container7 p{
+    color: rgba(169, 175, 196, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+    width: 90%;
+}
+@media screen and (max-width: 1170px) {
+    .main-container7 h3{
+        font-size: 20px;
+    }
+    .main-container7 p{
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .main-container7{
+        width: 70%;
+    }
+    .main-container7 h3{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,43 @@
+.Button{
+    width:200px;
+    height:54px;
+    border:0px transparent;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;/*Itemswillwrapontomultiplelines*/
+    /* gap: 10px; */
+    gap: 8px;
+
+}
+.span{
+    /* color:#5E6175; */
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+   
+}
+.Icon{
+    width: 20px;
+    height: 20px;
+}
+.Button:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 665px){
+    .Button{
+        width:150px;
+        height:46px;
+    }
+}
+@media screen and (max-width: 470px){
+    .Button{
+        width:120px;
+        height:40px;
+    }
+}

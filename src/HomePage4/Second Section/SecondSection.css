@@ -1,0 +1,204 @@
+body{
+  position: relative;
+}
+.contact-form{
+    width: 45%;
+    height: 500px;
+    position: absolute;
+    left:50%;
+    top: 15%;
+}
+.input-container{  
+    display: flex;
+    flex-wrap: wrap;
+    gap:3%;
+    width: 100%;
+}
+.input-container input{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding-left: 34px;
+    color: rgba(255, 255, 255, 1);
+}
+.input-container input::placeholder{
+   color: rgba(169, 175, 196, 1);
+   font-weight: 500;
+   font-size: 14;
+   font-family: 'Work Sans',sans-serif;
+}
+.input-container input[type='text']{
+   width: calc(34% - 42px);
+   height: 50px;
+ }
+ .input-container input[type='email']{
+    width: calc(64% - 40px);
+    height: 50px;
+  }
+  .select-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    
+  }
+
+  .select-container input[type="text"]{
+    background-color: transparent;
+    border-width: 0px;
+    height: 35px;
+    color:rgba(255, 255, 255, 1);
+    width: 63%;
+  }
+  .select-container input[type="text"]::placeholder{
+    color: rgba(169, 175, 196, 1);
+  font-weight: 500;
+  font-size: 14;
+  font-family: 'Work Sans',sans-serif;
+  }
+  
+.select-container input[type="text"]:focus{
+     outline:none;
+  }
+.css-1wy0on6 {
+    background-color: rgba(14, 18, 23, 1);
+   
+}
+.css-hlgwow{
+  background-color: rgba(14, 18, 23, 1);
+}
+.css-13cymwt-control:hover{
+  border-color: aquamarine !important;
+
+}
+.css-13cymwt-control {
+  background-color: transparent !important; 
+  border-color: transparent !important; 
+  border-radius: 0 !important; 
+  border-style: none !important;
+  border-width: 0 !important; 
+}
+.custom-select{
+  margin-left: 20px;
+}
+
+.flag-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.help-textArea{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    width: calc(99% - 34px);
+    height: 160px;
+    display: block;
+    margin-top: 15px;
+    padding-left: 34px;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 20px;
+    resize: none;
+}
+.help-textArea::placeholder{
+  color: rgba(169, 175, 196, 1);
+  font-weight: 500;
+  font-size: 14;
+  font-family: 'Work Sans',sans-serif;
+}
+.condition-container{
+    margin-top: 30px; 
+    width: 100%;
+}
+.condition-container input[type="checkbox"]{
+   opacity: 0;
+   
+}
+.condition-container label{
+    color: #fff;
+    font-weight: 400;
+   font-size: 17px;
+   font-family: 'Work-Sans',sans-serif;
+   margin-left: -20px;
+   position: relative;
+   padding-left: 35px;
+   position: relative;
+ }
+
+ .condition-container label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: rgba(14, 18, 23, 1);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.condition-container input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: solid rgba(255, 255, 255, 1);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+ .condition-container span{
+    color:  rgba(29, 177, 142, 1);
+    
+ }
+ .btn-message{
+    background-color: rgba(29, 177, 142, 1);
+    border: 1px solid rgba(29, 177, 142, 1);
+    border-radius: 30px;
+    width: 100%;
+    height: 60px;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'Work-Sans',sans-serif;
+    margin-top: 30px; 
+ }
+ .btn-message:hover{
+  cursor: pointer;
+ }
+ @media screen and (max-width: 800px) {
+  .contact-form{
+    width: 90%;
+    left:7%;
+    top: 30%;
+  }
+ }
+ @media screen and (max-width: 460px){
+  .contact-form{
+    width: 90%;
+    left:7%;
+    /* top: 38%; */
+    top: 32%;
+  }
+  .select-container input[type="text"]{
+    width: 45%;
+  } 
+ }
+  

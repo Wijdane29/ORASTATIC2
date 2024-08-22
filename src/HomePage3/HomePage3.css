@@ -1,0 +1,17 @@
+.mainSection2{
+    height: 800px;
+    padding: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(14, 18, 23, 1);
+}
+@media screen and (max-width: 960px) {
+ .mainSection2{
+    height: 1200px;
+ }
+}
+@media screen and (max-width: 560px){
+    .mainSection2{
+        height: 1000px;
+    }
+}

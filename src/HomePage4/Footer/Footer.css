@@ -1,0 +1,256 @@
+.container-footer{
+    background-color: #fff ;
+    height: 500px;
+    width: 100%;
+    margin-top: 45px;
+    position: relative;
+}
+.container-logos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container-logos h2{
+    color: rgba(94, 97, 117, 1); 
+    font-weight: 500;
+    font-family: 'Work-Sans',sans-serif;
+    font-size: 22px; 
+}
+.logo-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap:4%;
+    align-items: first baseline;   
+}
+.OraLogo{
+    width: 85px;
+    height: 40px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+.block2{
+    display: flex;
+    align-items: center;
+    gap:8%;
+}
+.block1{
+    width: 22%;
+    margin: 3% 10% 0 7%;
+}
+.block3{
+    width: 18%; 
+}
+.block4{
+    width: 18%;
+}
+.block5{
+    width: 25%;
+}
+.separator{
+    background-color: rgba(202, 207, 221, 1);
+    width: 1px;
+    height: 110px;
+}
+.firsParagraph,
+.secondParagraph span,
+.thirdParagraph span,
+.fourthParagraph span{
+    color: rgba(169, 175, 196, 1);
+    font-weight: 400;
+    font-family: 'Work-Sans',sans-serif;
+    font-size: 16px; 
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    
+} 
+
+.social-media-container{
+    position: absolute;
+    left: 7%;
+    top: 50%;
+}
+.social-media-container p{
+    color: rgba(94, 97, 117, 1);
+    font-weight: 500;
+    font-family: 'Work-Sans',sans-serif;
+    font-size: 24px;  
+    margin-bottom: 12px;
+}
+.social-media-logos{
+    display: flex;
+    gap: 12px;
+} 
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    width: 90%; 
+    margin: 0 auto; 
+    position: absolute;
+    bottom: 10%;
+    left:7%;
+}
+
+.sep-container {
+    width: 100%; 
+    height: 1px;
+    background-color: rgba(94, 97, 117, 0.25);
+    margin-bottom: 15px; 
+}
+
+.copyright-text {
+    color: rgba(94, 97, 117, 1);
+    font-weight: 400;
+    font-family: 'Work-Sans', sans-serif;
+    font-size: 16px;
+    text-align: right; 
+    width: 100%; 
+}
+
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+
+    
+}
+@media screen and (max-width: 1050px) {
+    .block1{
+        width: 25%;
+        margin-right: 1%;
+        margin-left: 3%;
+    }
+    .block3{
+        width: 17%; 
+    }
+    .block4{
+        width: 22%;
+    }
+    .block5{
+        width: 32%;
+    }
+    .block2{
+        gap:4%;
+    }
+    .OraLogo{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 666px) and (max-width: 991px){
+  
+}
+@media screen and (max-width: 800px){
+.container-logos{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 170px 170px;
+    column-gap: 8%; 
+}
+
+.block1{
+    width: 100%;
+    margin-right: 0;
+    margin-left: 7%;
+}
+.block3{
+    width: 100%; 
+}
+.block4{
+    width: 100%;
+    margin-left: 7%;
+}
+.block5{
+    width: 100%;
+}
+.firsParagraph,
+.secondParagraph,
+.thirdParagraph{
+    margin: 0;
+}
+.separator{
+    height: 90px;
+}
+.container-logos h2{
+    margin: 0; 
+}
+.firsParagraph,
+.secondParagraph span,
+.thirdParagraph span,
+.fourthParagraph span{
+    font-size: 14.5px;     
+} 
+.social-media-container{
+    left: 3%;
+    top: 64%;
+}
+.social-media-container p{
+    font-size: 20px;  
+    margin-bottom: 8px;
+}
+.social-media-logos{
+    gap: 4px;
+} 
+.footer-container{
+    bottom: 5%;
+}
+.sep-container {
+    width: 100%; 
+    height: 3px;
+    background-color: rgba(94, 97, 117, 0.25);
+    margin-bottom: 10px; 
+}
+
+.copyright-text {
+    font-size: 14px;
+}
+.separator{
+    height: 125px;
+}
+
+}
+@media screen and (max-width: 470px){
+    .separator{
+        height: 110px;
+    }
+    .container-logos{
+        display: flex;
+        flex-direction: column;
+        gap:4px;
+        width: 90%;
+    }
+    .block1{
+        margin-right: 0;
+        margin-left: 5%;
+    }
+    .block3, .block4, .block5{
+        margin-left: 5%;
+    }
+    .container-footer{
+        height: 650px;
+        margin-top: 25px;
+    }
+    .social-media-container{
+        left: 4%;
+        top: 83%;
+    }
+    .social-media-container p{
+        font-size: 14px; 
+        margin-bottom: 2px; 
+    }
+    .ig, .fb, .tw, .ld, .tk{
+        width: 34px;
+        height: 34px; 
+    }
+    .footer-container{
+        bottom: 1%;
+    }
+    .sep-container {
+       display: none;
+    }
+    
+    .copyright-text {
+        font-size: 12px;
+    }
+   
+}
+ 

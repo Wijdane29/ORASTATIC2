@@ -1,0 +1,134 @@
+.fifth-container{
+    font-family: 'Work sans',sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+}
+.fifth-container h1{
+    color: rgba(28, 28, 30, 1);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 56px;
+    width: 65%;
+    margin: 0;
+}
+.fifth-container p{
+    color: rgba(169, 175, 196, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    width: 50%;
+    margin: 20px 0 30px 0;
+}
+.main-form{
+    display: flex;
+    gap:20px;
+} 
+.main-form input{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    border: 1px solid rgba(242, 242, 247, 1);
+    height: 60px;
+}
+.input-text{
+    width: 220px;
+}
+.main-form input::placeholder{
+    color: rgba(169, 175, 196, 1);
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 24px;
+}
+.input-email{
+    width: 300px;
+}
+.main-form button{
+    background-color: rgba(29, 177, 142, 1);
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    border: 0px;
+    height: 60px;
+    color:  rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 18px;
+    width: 300px;
+}
+.fifth-container div{
+    height: 1px;
+    width: 83%;
+    background-color: rgba(94, 97, 117, 0.25);
+    margin-top: 100px;
+}
+@media screen and (max-width: 940px) {
+    .fifth-container h1{
+        font-size: 38px;
+        line-height: 50px;
+        width: 90%;
+    }
+    .fifth-container p{
+        font-size: 15px;
+        line-height: 24px;
+        width: 70%;
+    }
+    .main-form{
+        gap:12px;
+    } 
+    .input-text{
+        width: 30%;
+    }
+    .main-form input::placeholder{
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .input-email{
+        width: 50%;
+    }
+    .main-form button{
+        font-size: 17px;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .fifth-container h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .fifth-container p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .main-form{
+        gap:8px;
+    } 
+    .input-text{
+        width: 70%;
+    }
+    .main-form input::placeholder{
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .input-email{
+        width: 70%;
+    }
+    .main-form button{
+        font-size: 16px;
+        width: 70%;
+    }
+    .main-form{
+        flex-direction: column;
+        gap:10px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    } 
+}
