@@ -3,6 +3,7 @@ import './SecondSection.css'
 import { FlagIcon } from 'react-flag-kit';
 import countries from '../countries.json';
 import Select from 'react-select';
+import Popup from '../Popup/Popup'
 
 function SecondSection() {
   // const [selectedCountry, setSelectedCountry] = useState(countries[0]);
@@ -13,31 +14,40 @@ function SecondSection() {
   const [telephone,setTelephone]=useState();
   const [helpText,setHelpText]=useState();
   const [conditionAccepted,setconditionAccepted]=useState(false);
-
+  const [isPopupVisible, setPopupVisible] = useState(false);
   const handleCountryChange = (selectedOption) => {
     setSelectedCountry(selectedOption);
-    console.log("Selected Country : "+selectedCountry)
   };
   const handleFullNameChange = (event)=>{
     setFullName(event.target.value)
-    console.log("FullName : "+fullName)
   }
   const handleEmailChange = (e)=>{
     setEmail(e.target.value);
-    console.log("Email : "+email)
   }
   const handleTeleChange = (e)=>{
     setTelephone(e.target.value);
-    console.log("Telephone : "+telephone)
   }
   const handleHelpTextChange=(e)=>{
     setHelpText(e.target.value);
-    console.log("Help text : "+helpText)
   }
   const handleConditionChange=(e)=>{
     setconditionAccepted(e.target.checked);
-    console.log("Condition : "+conditionAccepted)
   }
+  // const handleSubmit=()=>{
+  //   setPopupVisible(true)
+  //   console.log(selectedCountry)
+  //   console.log(fullName)
+  //   console.log(email)
+  //   console.log(telephone)
+  //   console.log(helpText)
+  //   console.log(conditionAccepted)
+  // }
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent the form from reloading the page
+    setPopupVisible(true); // Show the popup
+  };
+
+
 
   const options = countries.map(country => ({
     value: country.code,
@@ -50,7 +60,8 @@ function SecondSection() {
   }));
 
   return (
-   <form className='contact-form'>
+    <>
+   <form className='contact-form' onSubmit={handleSubmit}>
     <div class="input-container">
       <input type="text"  id="fullName" value={fullName} onChange={handleFullNameChange} name="fullName" placeholder='Nom et Prénom' required></input>
       <input type="email"  id="email" value={email} onChange={handleEmailChange} name="email" placeholder='Adresse email' required></input>
@@ -67,16 +78,18 @@ function SecondSection() {
           components={{ IndicatorSeparator: () => null }}
         />
         
-       <input type="text"   id="phoneNumber" value={telephone} onChange={handleTeleChange}  name="phoneNumber" placeholder='Numéro de téléphone'></input>
+       <input type="text"   id="phoneNumber" value={telephone} onChange={handleTeleChange}  name="phoneNumber" placeholder='Numéro de téléphone' required></input>
       </div>
       
-      <textarea type="text"  className="help-textArea" value={helpText} onChange={handleHelpTextChange}  name="help" placeholder='Dites-nous en quoi nous pouvons vous aider ...'></textarea>
+      <textarea type="text"  className="help-textArea" value={helpText} onChange={handleHelpTextChange}  name="help" placeholder='Dites-nous en quoi nous pouvons vous aider ...' required></textarea>
       <div className='condition-container'>
-        <input type="checkbox" id="subscribe" value={conditionAccepted} onChange={handleConditionChange} name="subscribe"></input>
+        <input type="checkbox" id="subscribe" value={conditionAccepted} onChange={handleConditionChange} name="subscribe" required></input>
         <label for="subscribe">Je comprends et j'accepte <span>la politique de confidentialité</span></label>
       </div>
-      <button className='btn-message'>Envoyer le message</button>   
+      <button className='btn-message' >Envoyer le message</button>   
   </form>
+  <Popup trigger={isPopupVisible} setTrigger={setPopupVisible}></Popup>
+  </>
   );
 }
 

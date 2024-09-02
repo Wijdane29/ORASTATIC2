@@ -20,7 +20,6 @@ function Header() {
   };
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); // Toggle menu state
-    console.log("hhhhhhhhhh"+isMenuOpen)
 
   };
 
